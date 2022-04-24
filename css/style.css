@@ -407,9 +407,52 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 0.2rem solid #dddddd;
 }
 
 .header__title {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 0.2rem 0.2rem 3px #777777;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 12rem;
+}
+
+.header__link {
+  width: 3rem;
+  height: 3rem;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__icon {
+  width: 1rem;
+  height: 1rem;
+  fill: #333333;
 }
 /*# sourceMappingURL=style.css.map */
