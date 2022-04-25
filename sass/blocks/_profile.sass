@@ -1,0 +1,47 @@
+.profile
+  padding:  4rem 0
+  &__title
+    font-size: 2.8rem
+    font-weight: 500
+    text-shadow: .1rem .2rem 3px $primary-shadow
+    margin:  1rem 0 2rem
+.project
+  &__item 
+    display: grid
+    grid-template-columns:  2fr 5fr
+    grid-column-gap: 1.5rem
+    width: 100%
+    height: 15rem
+    border-radius: 1rem
+    padding: 1.5rem
+    background-color: $project-color
+    box-shadow: .1rem .2rem  3px  $secondary-shadow
+    &:not(:last-child)
+      margin-bottom: 2rem
+        
+      
+  &__preview
+    width: 100%
+    height: 100%
+    display: block
+    background-color: #fff
+    border-radius: 1rem
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__name
+    flex-basis: 10%
+    font-size: 1.8rem
+    font-weight: 500
+    margin: 0
+  &__description
+    flex-basis: 70%
+    font-size: 1.2rem
+    font-weight: 400
+    margin: 0
+  &__footer
+    flex-basis: 20%
+    font-size: 1rem
+    font-weight: 400
+  
