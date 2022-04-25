@@ -602,7 +602,7 @@ img {
   height: 15rem;
   border-radius: 1rem;
   padding: 1.5rem;
-  background-color: #e7e8ef;
+  background-color: #eaeaf1;
   -webkit-box-shadow: 0.1rem 0.2rem 3px #023b69;
           box-shadow: 0.1rem 0.2rem 3px #023b69;
 }
@@ -617,6 +617,7 @@ img {
   display: block;
   background-color: #fff;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .project__info {
@@ -637,7 +638,7 @@ img {
       flex-basis: 10%;
   font-size: 1.8rem;
   font-weight: 500;
-  margin: 0;
+  margin: .5rem 0;
 }
 
 .project__description {
