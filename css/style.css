@@ -556,7 +556,7 @@ img {
 }
 
 .hero__text::first-letter {
-  margin-left: 0rem;
+  margin-left: 0.5rem;
 }
 
 .hard {
