@@ -3,7 +3,7 @@
   &__title
     margin: 3.2rem 0 4.8rem
   &__lists
-    padding:  3rem 3rem
+    padding: 3rem 3rem
     position: relative
   &__swiper
     height: 30rem
@@ -20,6 +20,7 @@
       transition: opacity 0.3s linear
       -webkit-transition: opacity 0.3s linear
   &__overlay
+    cursor: pointer
     background: url("../img/zoom.png") no-repeat center rgba(79, 104, 110, 0.07)
     position: absolute
     width: 100%
@@ -51,7 +52,7 @@
     fill: $primary
     opacity: 1
     &:hover
-         box-shadow: .07rem .15rem 3px $secondary-shadow
+      box-shadow: .07rem .15rem 3px $secondary-shadow
     &--prev
       left: -28px
     &--next
