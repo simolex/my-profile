@@ -3,26 +3,60 @@
   &__title
     margin: 3.2rem 0 4.8rem
   &__lists
-    padding:  3rem 0
+    padding:  3rem 3rem
+    position: relative
   &__swiper
     height: 30rem
   &__docs
     height: 100%
     position: relative
     border-radius: .5rem
+    display: block
     overflow: hidden
     & > img
       object-fit: contain
     &:hover &__overlay
-      opacity: 1;
-      transition: opacity 0.3s linear;
-      -webkit-transition: opacity 0.3s linear;
+      opacity: 1
+      transition: opacity 0.3s linear
+      -webkit-transition: opacity 0.3s linear
   &__overlay
-    background: url("../img/zoom.png") no-repeat center rgba(79, 104, 110, 0.07);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    //opacity: 0;
- 
+    background: url("../img/zoom.png") no-repeat center rgba(79, 104, 110, 0.07)
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    opacity: 0
+  &__arrow
+    width: 18px
+    height: 18px
+    fill: inherit
+  &__button
+    cursor: pointer
+    padding: 0
+    width: 5.6rem
+    height: 5.6rem
+    min-height: 5.6rem
+    border-radius: 2.8rem
+    border: none
+    background-color: $link-color
+    box-shadow: .1rem .2rem 3px $secondary-shadow
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 10
+    position: absolute
+    bottom: 50%
+    transform: translateY(50%)
+    fill: $primary
+    opacity: 1
+    &:hover
+         box-shadow: .07rem .15rem 3px $secondary-shadow
+    &--prev
+      left: -28px
+    &--next
+      right: -28px
+    &--disabled
+      opacity: 0
+      fill: rgba(#e9e9e9,1)
+      cursor: default

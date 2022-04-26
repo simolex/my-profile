@@ -33,15 +33,37 @@ img
   font-weight: 500
   text-shadow: .1rem .2rem 3px $primary-shadow
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
-  z-index: 10;
-}
+.overlay 
+  display: none
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100vh
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.45)
+  z-index: 10
+  &__close 
+    position: absolute
+    top: 5px
+    right: 5px
+    font-size: 36px
+    cursor: pointer
+    width: 4.8rem
+    height: 4.8rem
+    border-color: transparent
+    border-radius: 50%
+    background-color: $link-color
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: .1rem .2rem 3px $secondary-shadow
+    &:hover
+        box-shadow: .07rem .15rem 3px $secondary-shadow
+.overlay--opened
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 9999

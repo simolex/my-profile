@@ -1,19 +1,22 @@
 import Swiper, { Navigation } from "swiper";
+import { overlay } from "./modules/overlay";
 import { slider } from "/modules/slider";
+import { certificate } from "./modules/certificate";
 
+overlay();
 slider(
   new Swiper(".certificate__swiper", {
     modules: [Navigation],
-    loop: true,
+    //loop: true,
     slidesPerView: 3,
-    // Navigation arrows
     navigation: {
-      nextEl: ".services__arrow--right",
-      prevEl: ".services__arrow--left",
-      disabledClass: "services__arrow--disabled",
+      nextEl: ".certificate__button--next",
+      prevEl: ".certificate__button--prev",
+      disabledClass: "certificate__button--disabled",
     },
     //edgeSwipeThreshold: 50,
     passiveListeners: false,
     threshold: 30,
   })
 );
+certificate();
