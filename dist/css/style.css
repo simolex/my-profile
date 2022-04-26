@@ -407,6 +407,12 @@ img {
      object-fit: cover;
 }
 
+.title {
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-shadow: 0.1rem 0.2rem 3px #aad8fd;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,9 +603,6 @@ img {
 }
 
 .profile__title {
-  font-size: 4.5rem;
-  font-weight: 500;
-  text-shadow: 0.1rem 0.2rem 3px #aad8fd;
   margin: 3.2rem 0 4.8rem;
 }
 
