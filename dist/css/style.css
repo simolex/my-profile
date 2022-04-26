@@ -733,6 +733,9 @@ img {
 
 .certificate__lists {
   padding: 3rem 3rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: -0.1rem -0.1rem 3px #aad8fd, 0.1rem 0.1rem 3px #aad8fd;
+          box-shadow: -0.1rem -0.1rem 3px #aad8fd, 0.1rem 0.1rem 3px #aad8fd;
   position: relative;
 }
 
@@ -743,7 +746,7 @@ img {
 .certificate__docs {
   height: 100%;
   position: relative;
-  border-radius: .5rem;
+  border-radius: .7rem;
   display: block;
   overflow: hidden;
 }
@@ -825,6 +828,7 @@ img {
 }
 
 .footer__wrapper {
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,7 +844,7 @@ img {
 }
 
 .footer__title {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-shadow: 0.1rem 0.2rem 3px #aad8fd;
 }
@@ -881,8 +885,8 @@ img {
 }
 
 .footer__icon {
-  width: 1.92rem;
-  height: 1.92rem;
+  width: 2rem;
+  height: 2rem;
   fill: #011627;
 }
 /*# sourceMappingURL=style.css.map */

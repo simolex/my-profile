@@ -7,13 +7,11 @@ export const certificate = () => {
   const button = document.createElement("span");
   button.classList.add("overlay__close");
   button.textContent = "X";
-  button.title = "Close";
+  button.title = "Закрыть";
 
   documents.addEventListener("click", (e) => {
     e.preventDefault();
-    const sertificateDocument = e.target
-      .closest(".certificate__docs")
-      .querySelector(".certificate__image");
+    const sertificateDocument = e.target.closest(".certificate__docs").querySelector(".certificate__image");
     if (sertificateDocument) {
       const sertificateImage = document.createElement("img");
       const startHeight = 35,
@@ -38,9 +36,7 @@ export const certificate = () => {
         duration: 400,
         timing: (timeFraction) => timeFraction,
         draw(progress) {
-          sertificateImage.style.height = `${
-            startHeight + Math.round((finishHeight - startHeight) * progress)
-          }%`;
+          sertificateImage.style.height = `${startHeight + Math.round((finishHeight - startHeight) * progress)}%`;
         },
       });
     }
