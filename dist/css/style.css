@@ -666,7 +666,7 @@ img {
   width: 100%;
   min-height: 15rem;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   background-color: #eaeaf1;
   -webkit-box-shadow: 0.1rem 0.2rem 3px #023b69;
           box-shadow: 0.1rem 0.2rem 3px #023b69;
@@ -697,6 +697,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 3rem;
 }
 
 .project__name {
