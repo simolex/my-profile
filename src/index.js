@@ -14,9 +14,25 @@ slider(
       prevEl: ".certificate__button--prev",
       disabledClass: "certificate__button--disabled",
     },
+
     //edgeSwipeThreshold: 50,
     passiveListeners: false,
     threshold: 30,
+    //////
+    //breakpointsBase: "container",
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      608: {
+        slidesPerView: 3,
+      },
+    },
   })
 );
 certificate();

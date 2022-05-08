@@ -7,8 +7,8 @@
     display: grid
     grid-template-columns: 2fr 5fr
     grid-column-gap: 1.5rem
+    grid-template-rows: minmax(15rem, 1fr)
     width: 100%
-    min-height: 15rem
     border-radius: 1rem
     padding: 2rem
     background-color: $project-color
@@ -23,11 +23,13 @@
     background-color: $secondary
     border-radius: 1rem
     overflow: hidden
+    grid-column: 1/span 1
   &__info
     display: flex
     flex-direction: column
     justify-content: space-between
     padding-left: 3rem
+    grid-column: 2/span 4
   &__name
     flex-basis: 10%
     font-size: 2.9rem

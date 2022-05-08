@@ -5,6 +5,7 @@
 
 html
   font-size: 62.5%
+
 body
   color: $primary
   background-color: $secondary
@@ -21,6 +22,7 @@ a, input
 
 .container
   max-width: 1240px
+  width: 90%
   margin: auto
 
 img
@@ -58,6 +60,7 @@ img
     align-items: center
     justify-content: center
     box-shadow: .1rem .2rem 3px $secondary-shadow
+    z-index: 100
     &:hover
       box-shadow: .07rem .15rem 3px $secondary-shadow
 .overlay--opened
@@ -65,4 +68,4 @@ img
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  z-index: 9999
+  z-index: 99
